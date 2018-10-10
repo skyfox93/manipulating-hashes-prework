@@ -13,10 +13,17 @@ def first_challenge
     }
   }
 
-  #your code here
 
+  contacts.each do |key, value|
+   contacts[key].each do |subkey, subval|
+      if subkey==:favorite_icecream_flavors
+        if contacts[key][subkey].any?{|word|word=="strawberry"}
+          contacts[key][subkey].delete("strawberry")
+        end
+      end
+    end
+  end
 
   #remember to return your newly altered contacts hash!
-  contacts
+contacts
 end
-
