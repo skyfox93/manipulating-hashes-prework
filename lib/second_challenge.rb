@@ -6,8 +6,9 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-#flatgroceries=groceries.flatten
+
 flatgroceries=groceries.values
+flatgroceries=flatgroceries.flatten
 puts flatgroceries.inspect
   
 
