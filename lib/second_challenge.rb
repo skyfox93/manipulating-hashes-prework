@@ -13,4 +13,3 @@ puts flatgroceries.inspect
   
 
 end
-second_challenge
