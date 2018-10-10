@@ -7,6 +7,7 @@ def second_challenge
   }
 
 flatgroceries=groceries.flatten
+flatgroceries=flatgroceries.values
 puts flatgroceries.inspect
   
 
